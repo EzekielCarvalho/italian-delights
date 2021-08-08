@@ -1,0 +1,33 @@
+{
+  "name": "italian-delights",
+  "version": "1.0.0",
+  "description": "italian delights project",
+  "main": "index.js",
+  "engines": {
+    "node": "12.18.3"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "node server.js",
+  "heroku-postbuild": "webpack -p"
+  },
+  "author": "Ezekiel Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "express-favicon": "^2.0.1",
+    "fractional": "^1.0.0",
+    "uniqid": "^5.2.0"
+  }
+}
